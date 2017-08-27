@@ -27,7 +27,7 @@ button.onclick=function(){
 };
  button1.onclick=function(){
         submit=submit+1;
-        var text1=text.innerHTML();
+        var text1=text.innerHTML;
         if(submit===1)
         name1.innerHTML=text1;
         if(submit===2)
