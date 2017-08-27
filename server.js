@@ -28,6 +28,13 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 
 });
+var names[];
+app.get('/submi-tname/:name',function(req,res) {
+    var name=req.params.name;
+    names.push(name);
+    res.send(JSON.stringfy(names));
+}
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
