@@ -1,11 +1,19 @@
 
 var button=document.getElementById('counter');
 var span=document.getElementById('count');
-var counter=0;
+
 button.onclick=function(){
+    var request=new XMLHttpRequest();
+    request.onreadystatechange =function(){
+        if(request.readyState===XMLHttpRequestDONE){
+            if(request.status===200){
+                var counter=request.responseText;
+                span.innerHTML=counter.toString();
+            }
+            
+        }
+    }
     
     
-    
-    counter=counter+1;
-    span.innerHTML=counter.toString();
+   
 };
