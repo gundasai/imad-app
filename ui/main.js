@@ -1,5 +1,5 @@
 console.log('Loaded!');
-var img=document.getElementById('https://pbs.twimg.com/profile_images/901408635426713600/lDWvebXD_bigger.jpg');
+var img=document.getElementById('madi');
 img.onclick=function(){
     img.style.marginLeft='100px';
     
