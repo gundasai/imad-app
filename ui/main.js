@@ -18,7 +18,14 @@ button.onclick=function(){
             
         }
     };
-    button1.onclick=function(){
+   
+    
+    request.open('GET','http://yeshwanthgunda98.imad.hasura-app.io/counter',true);
+    request.send(null);
+    
+   
+};
+ button1.onclick=function(){
         submit=submit+1;
         var text1=text.innerHTML;
         if(submit===1)
@@ -31,9 +38,3 @@ button.onclick=function(){
         
         
     };
-    
-    request.open('GET','http://yeshwanthgunda98.imad.hasura-app.io/counter',true);
-    request.send(null);
-    
-   
-};
