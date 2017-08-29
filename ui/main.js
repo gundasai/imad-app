@@ -24,7 +24,8 @@ var  button= document.getElementById('submit');
             }
         }
     };
-      request.open('GET','https://yeshwanthgunda98.imad.hasura-app.io/submit-name/'+name,true);
+      request.open('GET','http://yeshwanthgunda98.imad.hasura-app.io/submit-name/'+name,true);
+      request.send(null);
     
     
    
